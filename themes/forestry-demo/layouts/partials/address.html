@@ -1,0 +1,24 @@
+{{/*  
+  Displays the address from _data/information.yml properly formatted
+*/}}
+
+{{ with .Site.Data.information }}  
+<p>
+  {{ with $.Site.Title }}
+    {{ . }}<br />
+  {{ end }}
+  <br />
+  {{ with .address_1 }}{{ . }}<br />{{ end }}
+  {{ with .address_2 }}{{ . }}<br />{{ end }}
+  {{ if and (isset . "city") (isset . "state") (isset . "country") }}
+    {{ .city }}, {{ .state }}, {{ .country }}<br />
+  {{ end }}
+  <br />
+  {{ with .phone }}
+    <a href="tel:{{ . }}" title="{{ . }}">{{ . }}</a><br />
+  {{ end }}
+    {{ with .email }}
+    <a href="mailto:{{ . }}" title="{{ . }}">{{ . }}</a>
+  {{ end }}
+</p>
+{{ end }}

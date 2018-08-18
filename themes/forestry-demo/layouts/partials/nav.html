@@ -1,0 +1,48 @@
+{{/* 
+	Displays the site's navigation
+*/}}
+<header class="site-header">
+  <div class="container">
+      <h1 class="logo">
+        <a href="{{ "/" }}">{{ .Site.Title }}</a>
+      </h1>
+      {{ $currentPage := . }}
+      <nav class="main-nav">
+        <ul class="navigation">
+          {{ range .Site.Menus.navigation }}
+          <li class="{{ if .HasChildren }}nested {{ end }}{{ if $currentPage.IsMenuCurrent "navigation" . }}current{{ end }}">
+            {{ if .HasChildren }}
+            <ul class="first-level">
+              {{ range .Children }}
+              <li>
+                {{ if .HasChildren }}
+                <ul class="second-level">
+                  {{ range .Children }}
+                  <li>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                  </li>
+                  {{ end }}
+                </ul>
+                {{ end }}
+                <a href="{{ .URL }}">
+                  {{ .Name }}
+                  {{ if .HasChildren }}
+                    <i class='icon-right-dir-2'></i>
+                  {{ end }}
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+            <a href="{{ .URL }}">
+              {{ .Name }}
+              {{ if .HasChildren }}
+                <i class='icon-chevron-down'></i>
+              {{ end }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+    </nav>
+  </div>
+</header>

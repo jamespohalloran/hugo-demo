@@ -1,0 +1,12 @@
+{{ $page := .page }}
+{{ $size := .size }}
+{{ $sizes := dict "small" "300x300" "medium" "600x" }}
+{{ $page.Scratch.Set "banner_image" (absURL ($page.Scratch.Get "thumbnail_url")) }}
+{{ with $page.Resources.GetMatch "banner*" }}
+	{{ if ne $size  "default"}}
+		{{ $img := .Fit (index $sizes $size)}}
+		{{ $page.Scratch.Set "banner_image" $img.Permalink }}
+	{{ else }}
+		{{ $page.Scratch.Set "banner_image" .Permalink }}
+	{{ end }}
+{{ end }}

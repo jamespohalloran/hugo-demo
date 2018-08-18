@@ -1,0 +1,14 @@
+{{ partial "scratch/thumbnail" (dict "page" .) }}
+<div class="pure-u-1 pure-u-md-1-3">
+    <div class="card">
+        <div class="card-header">
+            <img src="{{ (default "/img/placeholder.png"  (.Scratch.Get "banner_image")) }}" alt="{{ .Title }}">
+        </div>
+        <div class="card-body">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.sub_heading }}
+                <p>{{ substr . 0 80 }}</p>
+            {{ end }}
+        </div>
+    </div>
+</div>

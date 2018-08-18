@@ -1,0 +1,35 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: field_group_list
+  name: publication
+  label: Publication
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: datetime
+    name: date
+    label: Date
+  - type: text
+    label: link
+    name: link
+  - type: list
+    name: projects
+    label: Projects
+    config:
+      use_select: true
+      source:
+        type: pages
+        section: projects
+  - type: list
+    name: authors
+    label: Authors
+    config:
+      use_select: true
+      source:
+        type: pages
+        section: people
+data_files:
+- data/publications.yaml

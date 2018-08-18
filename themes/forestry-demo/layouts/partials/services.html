@@ -1,0 +1,16 @@
+{{/* Displays a list of services from a document's front matter */}}
+<section class="services">
+    <div class="container pure-g">
+        {{ $number := len .Params.services }}
+        {{ $page := . }}
+        {{ range .Params.services }}
+            <div class="pure-u-1 pure-u-md-1-{{ $number }}">
+                <div class="service">
+                    <div class="service-icon"><img src="{{ partial "image_url" (dict "page" $page "url" .icon ) }}" alt=""></div>
+                    <h2>{{ .heading }}</h2>
+                    <p>{{ .description }}</p>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+</section>

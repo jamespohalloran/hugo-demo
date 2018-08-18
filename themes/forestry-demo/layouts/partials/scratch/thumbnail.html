@@ -1,0 +1,21 @@
+{{ $page := .page }}
+{{ $page.Scratch.Set "banner" false }}
+{{ with $page.Params.banner_image }}
+{{ $page.Scratch.Set "thumbnail_url" . }}
+{{ $page.Scratch.Set "banner" true }}
+{{ end }}
+{{ with $page.Params.thumbnail }}
+{{ $page.Scratch.Set "thumbnail_url" . }}
+{{ end }}
+{{ $page.Scratch.Set "thumbnail_size" "default" }}
+{{ with .size }}
+{{ $page.Scratch.Set "thumbnail_size" . }}
+{{ end }}
+{{/* We grab the scratching partial, cloudinary or default */}}
+{{ with $page.Scratch.Get "thumbnail_url" }}
+	{{ if (isset $page.Site.Params "cloudinary") }}
+	    {{ partial "scratch/thumbnail-cloudinary" (dict "page" $page "size" ($page.Scratch.Get "thumbnail_size")) }}
+	{{ else }}
+		{{ partial "scratch/thumbnail-default" (dict "page" $page "size" ($page.Scratch.Get "thumbnail_size")) }}
+	{{ end }}
+{{ end }}

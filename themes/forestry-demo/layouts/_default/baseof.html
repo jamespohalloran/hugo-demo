@@ -1,0 +1,36 @@
+{{/*
+	The default layout for the site, which is extended by all other layouts.
+	Includes the document <head>, main navigation and page footer
+*/}}
+<!doctype html>
+<html class="no-js" lang="en">
+<body>
+{{ block "scratch" . }}{{ end }}
+
+{{ partial "scratch/thumbnail" (dict "page" .) }}
+
+{{ partial "head" . }}
+
+{{ partial "nav" . }}
+
+{{ partial "hero" . }}
+
+{{ if and (not .IsHome) (ne .Params.layout "landing") }}
+	{{ partial "breadcrumbs" . }}
+{{ end }}
+
+{{/*
+	Any layout that extends this layout will have its contents
+	added as the content variable
+*/}}
+
+{{ block "main" . }}
+	
+{{ end }}
+
+{{ partial "footer" . }}
+
+<!-- Javascript -->
+<script src="{{ "/js/main.js" }}" type="text/javascript"></script>
+</body>
+</html>

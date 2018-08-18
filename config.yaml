@@ -1,0 +1,19 @@
+baseURL: "/"
+languageCode: "en-us"
+
+title: Belkirk College of Engineering
+
+description: Belkirk Demo Site for Forestry.io
+related:
+  indices:
+    - name: tags
+      weight: 1
+    - name: date
+      weight: 2
+      pattern: 2006
+permalinks:
+  people: /about/:title/
+taxonomies:
+  tag: tags
+
+theme: forestry-demo

@@ -1,0 +1,15 @@
+---
+hide_body: false
+is_partial: false
+fields:
+- type: tag_list
+  name: tags
+  label: Tags
+- type: file
+  name: banner_image
+  label: Banner Image
+  config:
+    maxSize: '6'
+- type: list
+  name: ''
+  label: ''

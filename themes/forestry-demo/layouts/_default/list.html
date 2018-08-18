@@ -1,0 +1,15 @@
+{{ define "main" }}
+    {{ range .Pages }}
+        <div class="container pure-g">
+            <div class="pure-u-1">
+                <div class="content content-narrow">
+                    <div class="list-layout">
+                        <h2><a href="{{ .Permalink }}">{{ .Title}}</a></h2>
+                        <div>{{ .Summary }}</div>
+                        <date>{{ .Date.Format "_2 Jan 2006" }}</date>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+{{ end }}

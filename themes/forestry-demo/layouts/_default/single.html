@@ -1,0 +1,15 @@
+{{/*
+    A general page layout. Used by default for all content on the site.
+*/}}
+{{ define "scratch" }}
+    {{ .Scratch.Set "breadcrumbs_class" "content-narrow" }}
+{{ end }}
+{{ define "main" }}
+    <div class="container pure-g">
+        <div class="pure-u-1">
+            <div class="content content-narrow">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+{{ end }}

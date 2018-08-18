@@ -1,0 +1,13 @@
+{{ $page := .page }}
+{{ $size := .size }}
+{{ $sizes := dict "small" "c_limit,h_512,w_512" "medium" "c_limit,w_800" }}
+{{ with $page.Scratch.Get "thumbnail_url" }}
+	{{ $thumbnail_url := . }}
+	{{ $cloudinary_url := $page.Site.Params.cloudinary }}
+	{{ $cloudinary_serve := (printf "%s/%s" $cloudinary_url . )  }}
+	{{ $page.Scratch.Set "banner_image"  $cloudinary_serve }}
+	{{ if ne $size "default" }}
+		{{ $cloudinary_serve_with_params := (printf "%s/%s/%s" $cloudinary_url (index $sizes $size) $thumbnail_url )  }}
+		{{ $page.Scratch.Set "banner_image"  $cloudinary_serve_with_params }}
+	{{ end }}
+{{ end }}

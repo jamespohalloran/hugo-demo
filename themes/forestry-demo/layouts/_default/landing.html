@@ -1,0 +1,33 @@
+{{/*
+	This layout is used to generate custom landing page layouts,
+	e.g index.md and about.md
+*/}}
+{{ define "main" }}
+	{{ with .Content }}
+		<section class="about">
+			<div class="container pure-g">
+				<div class="pure-u-1">
+					<div class="content content-narrow">
+						{{ . }}
+					</div>
+				</div>
+			</div>
+		</section>
+	{{ end }}
+
+	{{ if (isset .Params "services") }}
+		{{ partial "services" . }}
+	{{ end }}
+
+	{{ with .Params.show_news }}
+		{{ partial "news" $ }}
+	{{ end }}
+
+	{{ if (isset .Params "partners") }}
+		{{ partial "partners" . }}
+	{{ end }}
+
+	{{ with .Params.show_staff }}
+		{{ partial "staff" $ }}
+	{{ end }}
+{{ end }}
