@@ -23,13 +23,13 @@
 										{{ end }}
 									</td>
 									{{ $pub := . }}
-									{{ range (slice "authors" "projects") }}	
+									{{ range (slice "authors" "projects") }}
 										{{ with (index $pub .) }}
 										<td>
 											<ul>
 											{{ range . }}
 												{{ with $.Site.GetPage "page" . }}
-													<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+													<li>{{ .Title }}</li>
 												{{ end }}
 											{{ end }}
 											</ul>
