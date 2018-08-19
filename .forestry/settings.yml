@@ -4,23 +4,32 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- path: content
+- type: directory
+  path: content
   label: Pages
   create: all
-- path: content/posts
+  match: "*"
+- type: directory
+  path: content/posts
   label: Posts
   create: all
+  match: "**/*"
   templates:
   - post
-  default_front_matter_template: post
-- path: content/projects
+- type: directory
+  path: content/projects
   label: Projects
   create: all
-  default_front_matter_template: project
-- path: content/people
+  match: "**/*"
+  templates:
+  - project
+- type: directory
+  path: content/people
   label: People
   create: all
-  default_front_matter_template: person
+  match: "**/*"
+  templates:
+  - person
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
