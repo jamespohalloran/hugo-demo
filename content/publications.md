@@ -1,13 +1,13 @@
 ---
-title: 'Publications'
+title: Publications
 layout: publications
 menu:
   navigation:
     identifier: publications
     weight: 4
     title: Publications
----
 
+---
 Belkirk actively publishes and presents its research studies and findings on various topics, including:
 
 * Strategic Macro-Environmental Factor Analysis for Entry into the Fish Vaccines Market in India
