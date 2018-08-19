@@ -5,6 +5,8 @@ publication:
   projects:
   - projects/epilepsy-monitoring.md
   - projects/electric-vehicle-design.md
+  authors:
+  - people/charlize-babatunde.md
 - title: Statistical Analysis of SARV 3-year study
   projects:
   - projects/modern-engineering.md
@@ -17,4 +19,3 @@ publication:
   project:
   - projects/modern-engineering.md
   link: ''
----
