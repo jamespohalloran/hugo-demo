@@ -36,12 +36,14 @@ sections:
   new_doc_ext: md
   templates:
   - person
+- type: heading
+  label: Data
 - type: document
-  path: data/information.yml
+  path: data/information.yaml
   label: Contact Information
   match: "**/*"
 - type: document
-  path: data/publications.yml
+  path: data/publications.yaml
   label: Publications
   match: "**/*"
 upload_dir: static/uploads
