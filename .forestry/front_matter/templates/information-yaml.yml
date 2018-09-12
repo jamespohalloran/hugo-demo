@@ -1,7 +1,7 @@
 ---
-label: information.yaml
-hide_body: 
-is_partial: 
+label: Contact Information
+hide_body: false
+is_partial: false
 fields:
 - name: email
   label: Email
