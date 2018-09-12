@@ -41,11 +41,9 @@ sections:
 - type: document
   path: data/information.yaml
   label: Contact Information
-  match: "**/*"
 - type: document
   path: data/publications.yaml
   label: Publications
-  match: "**/*"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
