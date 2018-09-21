@@ -10,6 +10,7 @@ sections:
   path: content/about.md
   label: Aboot
   new_doc_ext: md
+  read_only: true
 - type: directory
   path: content/posts
   label: Posts
