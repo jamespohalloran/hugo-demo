@@ -49,4 +49,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/fewfreger.md
 - data/information.yaml
