@@ -6,10 +6,9 @@ webhook_url:
 sections:
 - type: heading
   label: Content
-- type: directory
-  path: content
-  label: Pages
-  create: all
+- type: document
+  path: content/about
+  label: Aboot
   match: "*"
   new_doc_ext: md
 - type: directory
@@ -23,7 +22,7 @@ sections:
 - type: directory
   path: content/projects
   label: Projects
-  create: none
+  create: all
   match: "**/*"
   new_doc_ext: md
   templates:
