@@ -26,5 +26,3 @@ fields:
   type: datetime
   hidden: true
   default: ''
-pages:
-- content/contact.md

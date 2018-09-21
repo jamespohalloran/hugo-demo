@@ -7,9 +7,8 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: content/about
+  path: content/about.md
   label: Aboot
-  match: "*"
   new_doc_ext: md
 - type: directory
   path: content/posts

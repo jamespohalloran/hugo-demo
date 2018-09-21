@@ -79,5 +79,3 @@ fields:
   type: text
   hidden: true
   default: home
-pages:
-- content/_index.md
