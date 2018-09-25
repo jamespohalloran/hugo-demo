@@ -48,7 +48,4 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-custom_preview: true
-custom_preview_endpoint: http://p6uc9yvmafqwrw.updates.forestryutils.com:8080
-custom_preview_url: http://p6uc9yvmafqwrw.p.forestryutils.com:8080
 version: 0.42.1
