@@ -48,4 +48,7 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+custom_preview: true
+custom_preview_endpoint: 
+custom_preview_url: 
 version: 0.42.1
