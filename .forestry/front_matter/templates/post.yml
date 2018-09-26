@@ -39,5 +39,8 @@ fields:
   type: text
   hidden: true
   default: post
+- type: textarea
+  name: tarea
+  label: tarea
 pages:
 - content/posts/subby/posty.md
