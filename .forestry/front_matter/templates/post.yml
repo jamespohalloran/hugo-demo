@@ -39,5 +39,3 @@ fields:
   type: text
   hidden: true
   default: post
-pages:
-- content/posts/subby/posty.md
