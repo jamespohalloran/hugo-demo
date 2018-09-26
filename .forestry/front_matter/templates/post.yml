@@ -42,5 +42,10 @@ fields:
 - type: textarea
   name: tarea
   label: tarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+      flavour: CommonMark
 pages:
 - content/posts/subby/posty.md
