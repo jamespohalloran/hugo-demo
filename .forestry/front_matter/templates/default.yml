@@ -14,3 +14,6 @@ fields:
 - type: list
   name: ''
   label: ''
+- type: field_group_list
+  name: rfg
+  label: rfg
