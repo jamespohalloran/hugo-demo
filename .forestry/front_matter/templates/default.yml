@@ -17,3 +17,13 @@ fields:
 - type: field_group_list
   name: rfg
   label: rfg
+  fields:
+  - type: select
+    name: whodat
+    config:
+      source:
+        type: datafiles
+    label: whodat
+  - type: text
+    name: tf
+    label: tf
