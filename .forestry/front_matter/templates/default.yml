@@ -27,3 +27,5 @@ fields:
   - type: text
     name: tf
     label: tf
+  config:
+    labelField: whodat
