@@ -32,3 +32,5 @@ fields:
     label: tf
   config:
     labelField: whodat
+pages:
+- content/projects/gregt.md
