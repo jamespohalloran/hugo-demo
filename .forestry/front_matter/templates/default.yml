@@ -22,7 +22,10 @@ fields:
     name: whodat
     config:
       source:
-        type: datafiles
+        type: simple
+      options:
+      - test1
+      - test2
     label: whodat
   - type: text
     name: tf
