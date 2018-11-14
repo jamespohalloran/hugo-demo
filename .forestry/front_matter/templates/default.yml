@@ -33,5 +33,5 @@ fields:
   config:
     labelField: whodat
 pages:
-- content/projects/prooj.md
 - content/projects/gregt.md
+- content/projects/prooj.md
