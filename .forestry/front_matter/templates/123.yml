@@ -2,4 +2,7 @@
 label: '123'
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  name: '123'
+  label: '123'
