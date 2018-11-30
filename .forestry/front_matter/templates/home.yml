@@ -8,6 +8,8 @@ fields:
   type: text
   hidden: false
   default: ''
+  config:
+    required: true
 - name: banner_image
   label: Banner image
   type: textarea
