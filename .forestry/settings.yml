@@ -24,6 +24,7 @@ sections:
   match: "**/*"
   exclude: content/projects/_index.md
   templates:
+  - post
   - project
 - type: directory
   path: content/people
