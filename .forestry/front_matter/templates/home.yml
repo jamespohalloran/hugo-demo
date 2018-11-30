@@ -119,4 +119,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/my-title-1.md
 - content/my-title.md
