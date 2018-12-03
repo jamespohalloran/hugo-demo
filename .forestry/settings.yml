@@ -38,4 +38,5 @@ public_path: http://res.cloudinary.com/forestrydemo1/image/upload
 front_matter_path: ''
 use_front_matter_path: true
 file_template: ":filename:"
+custom_preview: true
 version: 0.42.1
