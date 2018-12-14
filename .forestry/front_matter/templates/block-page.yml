@@ -1,8 +1,0 @@
----
-label: block-page
-hide_body: false
-is_partial: false
-fields:
-- type: blocks
-  label: bloocks
-  name: bloocks
