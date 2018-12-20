@@ -7,5 +7,4 @@ fields:
   name: blah
   label: Blah
 pages:
-- content/undefined-copy-1.md
 - content/blah2.md
