@@ -41,3 +41,4 @@ fields:
   default: post
 pages:
 - content/blah.md
+- content/undefined-copy.md
