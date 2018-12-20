@@ -1,0 +1,8 @@
+---
+label: no title
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: blah
+  label: Blah
