@@ -1,8 +1,8 @@
 ---
-new_page_extension: md
+new_page_extension: html
 auto_deploy: false
 admin_path: fewfewfew
-webhook_url: f
+webhook_url: webhook
 sections:
 - type: directory
   path: content/posts
@@ -34,4 +34,4 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-version: '0.50'
+version: '0.51'
