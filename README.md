@@ -1,1 +1,1 @@
-## A basic Jekyll demo site for the [Forestry.io CMS](https://forestry.io)
+## A basic Hugo demo site for the [Forestry.io CMS](https://forestry.io)
