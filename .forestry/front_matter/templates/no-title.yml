@@ -1,8 +1,16 @@
 ---
 label: no title
 hide_body: false
-is_partial: false
 fields:
-- type: text
-  name: blah
-  label: Blah
+- name: hop
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: publications
+      file: data/publications.yaml
+      path: 
+  label: Hop
