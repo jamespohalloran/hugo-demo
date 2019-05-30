@@ -15,3 +15,14 @@ permalinks:
 taxonomies:
   tag: tags
 theme: forestry-demo
+menu:
+  footer:
+  - name: About
+    weight: 3
+    identifier: about
+  - name: Posts
+    weight: 2
+    identifier: posts
+  - name: Projects
+    weight: 1
+    identifier: projects
