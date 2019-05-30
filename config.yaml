@@ -26,3 +26,7 @@ menu:
   - name: Projects
     weight: 1
     identifier: projects
+  navigation:
+  - name: Electric Vehicle
+    parent: Projects
+    weight: 1
