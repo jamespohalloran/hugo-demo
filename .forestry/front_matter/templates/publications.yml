@@ -1,7 +1,6 @@
 ---
 label: publications
 hide_body: false
-is_partial: false
 fields:
 - type: field_group_list
   name: publication
@@ -32,5 +31,3 @@ fields:
       source:
         type: pages
         section: people
-data_files:
-- data/publications.yaml
