@@ -1,5 +1,4 @@
----
-phone: "+1 929 391 0976"
+phone: +1 929 391 0976
 email: info@belkirkcollege.com
 address_1: 500 University Ave
 address_2: ''
@@ -8,3 +7,4 @@ state: NY
 postal_code: 10006
 country: US
 twitter: forestryio
+_template: information_yaml

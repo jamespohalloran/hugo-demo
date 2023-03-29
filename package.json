@@ -1,0 +1,18 @@
+{
+  "name": "hugo-demo-dec8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tinacms dev -c \"hugo server -D\"",
+    "build": "tinacms build && hugo build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "James O'Halloran",
+  "license": "ISC",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.1",
+    "tinacms": "^1.4.2"
+  }
+}
